@@ -58,7 +58,10 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div
+                className="w-10 h-10 rounded-lg flex items-center justify-center"
+                style={{ backgroundColor: "#007C9D" }}
+              >
                 <Icon name="Cpu" className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -87,7 +90,10 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-slate-800 text-white py-20">
+      <section
+        className="text-white py-20"
+        style={{ background: "linear-gradient(to right, #007C9D, #1e293b)" }}
+      >
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-5xl font-bold mb-6">Дизайн будущего</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
@@ -97,14 +103,18 @@ const Index = () => {
           <div className="flex justify-center space-x-4">
             <Button
               size="lg"
-              className="bg-white text-blue-600 hover:bg-gray-100"
+              className="bg-white hover:bg-gray-100"
+              style={{ color: "#007C9D" }}
             >
               Наши проекты
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-blue-600"
+              className="border-white text-white hover:bg-white"
+              style={{ "--hover-color": "#007C9D" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#007C9D")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
             >
               Связаться с нами
             </Button>
@@ -128,7 +138,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="text-center">
               <CardHeader>
-                <CardTitle className="text-blue-600">30%</CardTitle>
+                <CardTitle style={{ color: "#007C9D" }}>30%</CardTitle>
                 <p className="text-gray-600">Автоматизировано с ИИ</p>
               </CardHeader>
               <CardContent>
@@ -173,7 +183,11 @@ const Index = () => {
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex items-center justify-between">
-                    <Icon name={tool.icon} className="w-8 h-8 text-blue-600" />
+                    <Icon
+                      name={tool.icon}
+                      className="w-8 h-8"
+                      style={{ color: "#007C9D" }}
+                    />
                     <Badge
                       variant={
                         tool.status === "Активно" ? "default" : "secondary"
@@ -294,7 +308,11 @@ const Index = () => {
             Свяжитесь с нашей командой для обсуждения вашего проекта
           </p>
           <div className="flex justify-center space-x-4">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button
+              size="lg"
+              style={{ backgroundColor: "#007C9D" }}
+              className="hover:opacity-90"
+            >
               <Icon name="Mail" className="w-4 h-4 mr-2" />
               Написать нам
             </Button>
