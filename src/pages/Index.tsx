@@ -81,9 +81,6 @@ const Index = () => {
               <a href="#tools" className="text-gray-600 hover:text-gray-900">
                 AI-инструменты
               </a>
-              <a href="#contacts" className="text-gray-600 hover:text-gray-900">
-                Контакты
-              </a>
             </nav>
           </div>
         </div>
@@ -296,34 +293,6 @@ const Index = () => {
                 </ul>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contacts" className="py-16 bg-slate-800 text-white">
-        <div className="container mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold mb-4">Готовы к сотрудничеству?</h3>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Свяжитесь с нашей командой для обсуждения вашего проекта
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Button
-              size="lg"
-              style={{ backgroundColor: "#007C9D" }}
-              className="hover:opacity-90"
-            >
-              <Icon name="Mail" className="w-4 h-4 mr-2" />
-              Написать нам
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-slate-800"
-            >
-              <Icon name="Phone" className="w-4 h-4 mr-2" />
-              Позвонить
-            </Button>
           </div>
         </div>
       </section>
